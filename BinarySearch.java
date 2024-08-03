@@ -13,14 +13,14 @@ public class BinarySearch {
         System.out.println(binary(arr ,target));
     }
 
-    public static boolean  binary(int[] arr , int target){
+    public static int  binary(int[] arr , int target){
         int start = 0;
         int end = arr.length;
         while (start<end) { 
             int mid = (start+end)/2;
 
             if(arr[mid]==target){
-                return true;
+                return mid;
             }
             else if(target<mid){
                 end=mid-1;
@@ -32,6 +32,6 @@ public class BinarySearch {
            
 
         }
-        return false ;
+        return -1 ;
     }
 }
