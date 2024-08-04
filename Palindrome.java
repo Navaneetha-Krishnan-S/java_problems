@@ -7,12 +7,12 @@ public class Palindrome {
         Scanner in =  new Scanner(System.in);
         String name = in.next();
         String rev ="";
-       
-        for (int i = name.length()-1; i >=0; i--) {
-           rev = rev+name.charAt(i);
+       String name1 = name.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
+        for (int i = name1.length()-1; i >=0; i--) {
+           rev = rev+name1.charAt(i);
         }
         System.out.println(rev);
-        if(name.equals(rev)){
+        if(name1.equals(rev)){
             System.out.println("Palindrome");
         }
         else{
