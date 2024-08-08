@@ -6,6 +6,7 @@ public class FirstMissingPositiveNum {
     int ans =firstMissingPositive(nums);
         System.out.println(ans);
     }
+    //
     public static int firstMissingPositive(int[] nums) {
 
         for (int i = 0; i < nums.length;) {
